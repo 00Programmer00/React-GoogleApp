@@ -1,0 +1,15 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.link{
+  text-align: center;
+  color: black;
+}
+
+.link:hover{
+  text-decoration: none;
+
+}

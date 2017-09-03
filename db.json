@@ -1,0 +1,185 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "login@example.com",
+      "password": "qwerty"
+    },
+    {
+      "email": "user",
+      "password": "user",
+      "id": 2
+    },
+    {
+      "email": "test",
+      "password": "test",
+      "id": 3
+    },
+    {
+      "email": "Test",
+      "password": "test",
+      "id": 4
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "category 1"
+    }
+  ],
+  "routes": [
+    {
+      "id": 1,
+      "name": "Awesome route",
+      "description": "desc",
+      "category": "Byce",
+      "length": 50.5,
+      "markers": [
+        {
+          "lat": 40.13123,
+          "lng": 56.52342
+        },
+        {
+          "lat": 40.13123,
+          "lng": 56.52342
+        },
+        {
+          "lat": 40.13123,
+          "lng": 56.52342
+        }
+      ],
+      "userId": 1
+    },
+    {
+      "name": "New Route",
+      "category": "car",
+      "description": "Hello World",
+      "markers": [],
+      "userId": "3",
+      "id": 2
+    },
+    {
+      "name": "Abroad",
+      "category": "car",
+      "description": "This is route from Ukraine to the Belarus, Good Luck",
+      "markers": [
+        {
+          "lat": 49.26780455063753,
+          "lng": 32.431640625
+        },
+        {
+          "lat": 53.120405283106564,
+          "lng": 28.564453125
+        }
+      ],
+      "userId": "3",
+      "id": 3
+    },
+    {
+      "name": "Hi",
+      "category": "walking",
+      "description": "wf qwf qw fqw f qwf qwfqwqw wqx vsd bgfn fd gryj dy hnyt bse fvaw dc vrthb rstg ver",
+      "markers": [
+        {
+          "lat": 25.799891182088334,
+          "lng": 27.509765625
+        },
+        {
+          "lat": 28.226970038918342,
+          "lng": 4.130859375
+        },
+        {
+          "lat": 27.994401411046145,
+          "lng": 15.732421875
+        }
+      ],
+      "userId": "4",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "description": "desc",
+      "rating": 7,
+      "userId": 1,
+      "routeId": 1
+    },
+    {
+      "description": "wdqdwqdqwd",
+      "rating": "4",
+      "id": 2
+    },
+    {
+      "description": "wqdqw",
+      "rating": "10",
+      "userId": "3",
+      "routeId": 1,
+      "id": 3
+    },
+    {
+      "description": "qqqqq",
+      "rating": "5",
+      "userId": "3",
+      "routeId": 1,
+      "id": 4
+    },
+    {
+      "description": "111111111",
+      "rating": "4",
+      "userId": "3",
+      "routeId": 1,
+      "id": 5
+    },
+    {
+      "description": "gav",
+      "rating": "2",
+      "userId": "3",
+      "routeId": 1,
+      "id": 6
+    },
+    {
+      "description": "Hello",
+      "rating": "6",
+      "userId": "3",
+      "routeId": 2,
+      "id": 7
+    },
+    {
+      "description": "Hmm, nice route",
+      "rating": "8",
+      "userId": "3",
+      "routeId": 3,
+      "id": 8
+    },
+    {
+      "description": "Hi",
+      "rating": "",
+      "userId": "4",
+      "routeId": 3,
+      "id": 9
+    }
+  ],
+  "favorites": [
+    {
+      "id": 1,
+      "userId": 1,
+      "routeId": 1
+    },
+    {
+      "userId": "3",
+      "routeId": 3,
+      "id": 2
+    },
+    {
+      "userId": "4",
+      "routeId": 3,
+      "id": 3
+    },
+    {
+      "userId": "4",
+      "routeId": 3,
+      "id": 4
+    }
+  ]
+}
