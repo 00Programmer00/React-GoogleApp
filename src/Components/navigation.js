@@ -22,9 +22,6 @@ class Nav extends Component {
                         <li className="nav-item">
                             <Link to="/addRoute" className="nav-link">Add Route</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link to="/favorites" className="nav-link">Favorites</Link>
-                        </li>
 
                     </ul>
                     <ul className="nav navbar-nav navbar-right">

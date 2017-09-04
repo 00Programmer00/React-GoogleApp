@@ -19,6 +19,16 @@
       "email": "Test",
       "password": "test",
       "id": 4
+    },
+    {
+      "email": "test1",
+      "password": "test",
+      "id": 5
+    },
+    {
+      "email": "new",
+      "password": "user",
+      "id": 6
     }
   ],
   "categories": [
@@ -51,49 +61,27 @@
       "userId": 1
     },
     {
-      "name": "New Route",
-      "category": "car",
-      "description": "Hello World",
+      "name": "New Awesome route",
+      "category": "walking",
+      "description": "Hello world",
       "markers": [],
-      "userId": "3",
+      "userId": "6",
       "id": 2
     },
     {
-      "name": "Abroad",
-      "category": "car",
-      "description": "This is route from Ukraine to the Belarus, Good Luck",
-      "markers": [
-        {
-          "lat": 49.26780455063753,
-          "lng": 32.431640625
-        },
-        {
-          "lat": 53.120405283106564,
-          "lng": 28.564453125
-        }
-      ],
-      "userId": "3",
+      "name": "Awesome route 3",
+      "category": "walking",
+      "description": "Nice day",
+      "markers": [],
+      "userId": "6",
       "id": 3
     },
     {
-      "name": "Hi",
-      "category": "walking",
-      "description": "wf qwf qw fqw f qwf qwfqwqw wqx vsd bgfn fd gryj dy hnyt bse fvaw dc vrthb rstg ver",
-      "markers": [
-        {
-          "lat": 25.799891182088334,
-          "lng": 27.509765625
-        },
-        {
-          "lat": 28.226970038918342,
-          "lng": 4.130859375
-        },
-        {
-          "lat": 27.994401411046145,
-          "lng": 15.732421875
-        }
-      ],
-      "userId": "4",
+      "name": "Awesome route 4",
+      "category": "byce",
+      "description": "Bad day",
+      "markers": [],
+      "userId": "6",
       "id": 4
     }
   ],
@@ -158,6 +146,13 @@
       "userId": "4",
       "routeId": 3,
       "id": 9
+    },
+    {
+      "description": "Hmm, i dont` think that it is nice route",
+      "rating": "1",
+      "userId": "2",
+      "routeId": 3,
+      "id": 10
     }
   ],
   "favorites": [
@@ -167,19 +162,14 @@
       "routeId": 1
     },
     {
-      "userId": "3",
-      "routeId": 3,
+      "userId": "6",
+      "routeId": 2,
       "id": 2
     },
     {
-      "userId": "4",
-      "routeId": 3,
+      "userId": "6",
+      "routeId": 4,
       "id": 3
-    },
-    {
-      "userId": "4",
-      "routeId": 3,
-      "id": 4
     }
   ]
 }

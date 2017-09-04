@@ -26,11 +26,13 @@ class routeTemplate extends React.Component{
             type: '',
             comments: [],
             addComment: '',
-            rating: ''
+            rating: '',
+            userId: ''
         };
         this.CommentList = this.CommentList.bind(this);
         this.onChange = this.onChange.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
+        this.removeFavorite = this.removeFavorite.bind(this);
 
     }
     componentDidMount() {
@@ -46,7 +48,12 @@ class routeTemplate extends React.Component{
         const slugter = this.props.match.params.slug;
         return axios.get('http://localhost:3001/routes?id='+slugter, )
             .then( (response) => {
-                this.setState({id: response.data[0].id,routes: response.data[0].markers, name: response.data[0].name, description: response.data[0].description, type: response.data[0].category});
+                this.setState({id: response.data[0].id,routes: response.data[0].markers,
+                    name: response.data[0].name,
+                    description: response.data[0].description,
+                    type: response.data[0].category,
+                    userId: response.data[0].userId
+                });
             });
     }
 
@@ -70,13 +77,16 @@ class routeTemplate extends React.Component{
         e.target.value = '';
     }
 
+    removeFavorite(){
+        axios.delete('http://localhost:3001/favorites?id=' + this.state.id +'&userId='+this.state.userId)
+    }
+
     render(){
         const that = this;
         function addToFavorites() {
             axios.post('http://localhost:3001/favorites', {userId: localStorage.id, routeId: that.state.id});
 
         }
-
 
         const markers = this.state.routes.map((item, i) => {
             return <Marker key={i}
@@ -109,7 +119,6 @@ class routeTemplate extends React.Component{
         );
 
 
-
         return(
             <div>
                 <Nav />
@@ -124,10 +133,15 @@ class routeTemplate extends React.Component{
                     </Map>
                 </div>
                 <div className="col-md-5 mt-5 pt-5 ml-4 pl-4 float-right">
-                    <h1>{this.state.name}</h1>
                     <button className="btn btn-primary btn-lg float-right" onClick={addToFavorites}>
                         Add route ro favorites
                     </button>
+                    <button className="btn btn-primary btn-lg float-right" onClick={this.removeFavorite}>
+                        Remove from favorites
+                    </button>
+
+                    <h1 className="mt-5">{this.state.name}</h1>
+
 
                     <br/>
                     <div>

@@ -10,7 +10,6 @@ import { Redirect, Switch } from 'react-router';
 import Routes from './Components/Routes';
 import addRoute from './Components/addRoutePage';
 import RouteTemplate from './Components/routeTemplate';
-import Favorites from './Components/Favorites';
 
 
 const store = createStore(
@@ -44,7 +43,6 @@ class App extends Component {
                         <Route exact={true} path="/addRoute" component={addRoute}/>
                         <Route exact={true} path="/id/:slug" component={RouteTemplate} />
                         <Route exact={true} path="/signUp" component={SignupPage}/>
-                        <Route exact={true} path="/favorites" component={Favorites}/>
                 </div>
             </Router>
         </Provider>

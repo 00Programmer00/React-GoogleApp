@@ -8,6 +8,8 @@ class Routes extends React.Component {
 
         this.state = {routes: []};
 
+        this.favorites = this.favorites.bind(this);
+        this.RouteList = this.RouteList.bind(this);
     }
 
     componentDidMount() {
@@ -17,9 +19,19 @@ class Routes extends React.Component {
     RouteList() {
         return axios.get('http://localhost:3001/routes', )
             .then( (response) => {
-                console.log(response.data);
                 this.setState({routes: response.data});
             });
+    }
+
+    favorites(){
+        axios.get('http://localhost:3001/favorites?userId='+localStorage.id).then((response) => {
+            let favorites = response.data;
+            favorites = favorites.map(fav => fav.routeId);
+            console.log(favorites);
+            let filtered = this.state.routes.filter(route => favorites.indexOf(route.id) >= 0);
+            console.log(filtered);
+            this.setState({routes: filtered});
+        });
     }
 
     render() {
@@ -44,6 +56,14 @@ class Routes extends React.Component {
         return(
         <div>
             <Nav />
+            <div className="col-md-4 d-block mx-auto mt-5 pt-3 ">
+                <button className="btn btn-primary btn-lg ml-4 mt-5" onClick={this.favorites}>
+                    Favorites
+                </button>
+                <button className="btn btn-primary btn-lg ml-4 mt-5" onClick={this.RouteList}>
+                    Delete Filters
+                </button>
+            </div>
 
             <div id="layout-content" className="layout-content-wrapper col-md-6 d-block mx-auto mt-5 pt-5">
                 <div className="panel-list">{ routes }</div>
