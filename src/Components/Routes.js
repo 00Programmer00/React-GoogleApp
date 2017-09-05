@@ -6,10 +6,12 @@ class Routes extends React.Component {
     constructor(props) {
         super(props);
 
-        this.state = {routes: []};
+        this.state = {routes: [], name: '', description: '', length: ''};
 
         this.favorites = this.favorites.bind(this);
         this.RouteList = this.RouteList.bind(this);
+        this.onChange = this.onChange.bind(this);
+        this.Search = this.Search.bind(this);
     }
 
     componentDidMount() {
@@ -30,6 +32,20 @@ class Routes extends React.Component {
             let filtered = this.state.routes.filter(route => favorites.indexOf(route.id) >= 0);
             this.setState({routes: filtered});
         });
+    }
+
+    Search(e){
+        e.preventDefault();
+        axios.get('http://localhost:3001/routes?q='+ this.state.description + this.state.name + this.state.length).then((response) => {
+            let routes = response.data;
+            routes = routes.map(route => route.id);
+            let filtered = this.state.routes.filter(route => routes.indexOf(route.id) >= 0);
+            this.setState({routes: filtered});
+        });
+    }
+
+    onChange(e){
+        this.setState({[e.target.placeholder]: e.target.value});
     }
 
     render() {
@@ -54,14 +70,56 @@ class Routes extends React.Component {
         return(
         <div>
             <Nav />
-            <div className="col-md-4 d-block mx-auto mt-5 pt-3 ">
-                <button className="btn btn-primary btn-lg ml-4 mt-5" onClick={this.favorites}>
+
+            <form >
+                <div className="row mx-auto mt-5 pt-5">
+                    <div className="col-md-2">
+                            <input
+                                onChange={this.onChange}
+                                type="text"
+                                className="form-control"
+                                placeholder="name"
+                            />
+
+                    </div>
+
+                    <div className="col ">
+                        <input
+                            onChange={this.onChange}
+                            type="text"
+                            className="form-control"
+                            placeholder="description"
+                        />
+
+                    </div>
+
+                    <div className="col-md-1">
+                        <input
+                            onChange={this.onChange}
+                            type="text"
+                            className="form-control"
+                            placeholder="length"
+                        />
+
+                    </div>
+
+                    <div className="col">
+                        <button className="btn btn-primary btn-lg" onClick={this.Search}>
+                            Search
+                        </button>
+                    </div>
+                </div>
+            </form>
+
+            <div className="float-right">
+                <button className="btn btn-primary btn-lg" onClick={this.favorites}>
                     Favorites
                 </button>
-                <button className="btn btn-primary btn-lg ml-4 mt-5" onClick={this.RouteList}>
+                <button className="btn btn-primary btn-lg ml-2" onClick={this.RouteList}>
                     Delete Filters
                 </button>
             </div>
+
 
             <div id="layout-content" className="layout-content-wrapper col-md-6 d-block mx-auto mt-5 pt-5">
                 <div className="panel-list">{ routes }</div>

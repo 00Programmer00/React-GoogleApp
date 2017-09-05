@@ -111,11 +111,14 @@ class routeTemplate extends React.Component{
     }
 
     onSubmit(e){
+        e.preventDefault();
         axios.post('http://localhost:3001/comments', {description: this.state.addComment,
             rating: this.state.rating,
             userId: localStorage.id,
             routeId: this.state.id});
         e.target.value = '';
+
+        this.state.comments.push({description: this.state.addComment, rating: this.state.rating});
     }
 
     removeFavorite(){
@@ -140,21 +143,27 @@ class routeTemplate extends React.Component{
         });
 
         const sameRoutes = this.state.sameRoutes.map((route, i) => {
-            const path = "/id/" + route.id;
+            if(route.name === this.state.name){
 
-            return <div key={i} className="container">
-                <ul className="list-group" id="posts">
+            }else{
+                const path = "/id/" + route.id;
 
-                    <a href={path} className="link">
-                        <li className="list-group-item center"><h1>{route.name}</h1>
-                            <hr/>
-                            {route.description}
-                        </li>
-                    </a>
+                return <div key={i} className="container">
+                    <ul className="list-group" id="posts">
+                        <a href={path} className="link">
+                            <li className="list-group-item center"><h1>{route.name}</h1>
+                                <hr/>
+                                {route.description}
+                            </li>
+                        </a>
 
-                </ul>
-            </div>
+                    </ul>
+                </div>
+            }
+
         });
+
+        sameRoutes.splice();
 
         const comments = this.state.comments.map((item, i) => {
             return <div key = {i} className="container">
