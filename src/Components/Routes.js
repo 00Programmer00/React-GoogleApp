@@ -27,9 +27,7 @@ class Routes extends React.Component {
         axios.get('http://localhost:3001/favorites?userId='+localStorage.id).then((response) => {
             let favorites = response.data;
             favorites = favorites.map(fav => fav.routeId);
-            console.log(favorites);
             let filtered = this.state.routes.filter(route => favorites.indexOf(route.id) >= 0);
-            console.log(filtered);
             this.setState({routes: filtered});
         });
     }

@@ -1,174 +1,628 @@
 {
   "users": [
     {
-      "id": 1,
-      "email": "login@example.com",
-      "password": "qwerty"
-    },
-    {
-      "email": "user",
-      "password": "user",
-      "id": 2
-    },
-    {
-      "email": "test",
-      "password": "test",
-      "id": 3
+      "email": "email@mail.domain",
+      "password": "password",
+      "id": 1
     },
     {
       "email": "Test",
       "password": "test",
-      "id": 4
+      "id": 2
     },
     {
-      "email": "test1",
-      "password": "test",
-      "id": 5
-    },
-    {
-      "email": "new",
-      "password": "user",
-      "id": 6
-    }
-  ],
-  "categories": [
-    {
-      "id": 1,
-      "name": "category 1"
+      "email": "Test1",
+      "password": "Test1",
+      "id": 3
     }
   ],
   "routes": [
     {
-      "id": 1,
-      "name": "Awesome route",
-      "description": "desc",
-      "category": "Byce",
-      "length": 50.5,
+      "name": "Lorem 1",
+      "category": "walking",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed in mauris sit amet dui sagittis ullamcorper. Praesent ullamcorper dui in erat semper pretium. Fusce aliquam nibh urna. Integer rhoncus facilisis vehicula. Morbi viverra purus facilisis, pharetra magna iaculis, maximus urna. Morbi bibendum diam eget orci accumsan, eget aliquet neque viverra. Duis id dolor mauris. Praesent eu ex ligula. Sed tristique tellus non pretium egestas. Morbi ultrices nisl felis, vitae vehicula augue aliquet ut. Curabitur feugiat justo eu augue sollicitudin, et euismod nulla blandit. Suspendisse iaculis dignissim nisl.",
       "markers": [
         {
-          "lat": 40.13123,
-          "lng": 56.52342
+          "lat": 49.43827328009369,
+          "lng": 32.06059455871582
         },
         {
-          "lat": 40.13123,
-          "lng": 56.52342
+          "lat": 49.44117546263821,
+          "lng": 32.064456939697266
         },
         {
-          "lat": 40.13123,
-          "lng": 56.52342
+          "lat": 49.43774305511205,
+          "lng": 32.07037925720215
+        },
+        {
+          "lat": 49.439166277631344,
+          "lng": 32.07192420959473
+        },
+        {
+          "lat": 49.44670029695474,
+          "lng": 32.067718505859375
+        },
+        {
+          "lat": 49.44697931247674,
+          "lng": 32.06205368041992
+        },
+        {
+          "lat": 49.444775046574925,
+          "lng": 32.05892086029053
+        },
+        {
+          "lat": 49.44798375520828,
+          "lng": 32.05304145812988
+        },
+        {
+          "lat": 49.45041107351702,
+          "lng": 32.04855680465698
+        },
+        {
+          "lat": 49.450020478684785,
+          "lng": 32.0481276512146
         }
       ],
-      "userId": 1
+      "userId": "1",
+      "polyLine": [
+        {
+          "lat": 49.43827328009369,
+          "lng": 32.06059455871582
+        },
+        {
+          "lat": 49.44117546263821,
+          "lng": 32.064456939697266
+        },
+        {
+          "lat": 49.43774305511205,
+          "lng": 32.07037925720215
+        },
+        {
+          "lat": 49.439166277631344,
+          "lng": 32.07192420959473
+        },
+        {
+          "lat": 49.44670029695474,
+          "lng": 32.067718505859375
+        },
+        {
+          "lat": 49.44697931247674,
+          "lng": 32.06205368041992
+        },
+        {
+          "lat": 49.444775046574925,
+          "lng": 32.05892086029053
+        },
+        {
+          "lat": 49.44798375520828,
+          "lng": 32.05304145812988
+        },
+        {
+          "lat": 49.45041107351702,
+          "lng": 32.04855680465698
+        },
+        {
+          "lat": 49.450020478684785,
+          "lng": 32.0481276512146
+        }
+      ],
+      "length": 3864,
+      "id": 1
     },
     {
-      "name": "New Awesome route",
-      "category": "walking",
-      "description": "Hello world",
-      "markers": [],
-      "userId": "6",
+      "name": "Lorem 2",
+      "category": "byce",
+      "description": "Praesent ultricies tincidunt iaculis. Cras suscipit erat sed laoreet commodo. Phasellus malesuada, sem vel tincidunt sollicitudin, magna eros interdum erat, nec gravida quam justo vitae erat. Sed vitae convallis nisi. Etiam porttitor tristique pretium. Integer ornare diam id venenatis vulputate. Quisque ut viverra turpis. In odio nulla, rutrum ut mattis ac, tincidunt aliquam sapien. Nunc eu dolor vestibulum nunc pellentesque blandit eget non leo. Proin ut mauris pharetra, pretium eros non, convallis erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam aliquam in purus in malesuada. Aenean non nisl nec felis semper imperdiet. Suspendisse ultrices hendrerit nunc, eu facilisis est malesuada ut. Ut vehicula erat vel est ultricies rhoncus.",
+      "markers": [
+        {
+          "lat": 50.444688234298745,
+          "lng": 30.520877838134766
+        },
+        {
+          "lat": 50.446027359426736,
+          "lng": 30.513582229614258
+        },
+        {
+          "lat": 50.448924112703374,
+          "lng": 30.51454782485962
+        },
+        {
+          "lat": 50.449347679689375,
+          "lng": 30.5120587348938
+        },
+        {
+          "lat": 50.452162254314366,
+          "lng": 30.50851821899414
+        },
+        {
+          "lat": 50.4501128233431,
+          "lng": 30.502960681915283
+        },
+        {
+          "lat": 50.45213492915201,
+          "lng": 30.500857830047607
+        }
+      ],
+      "userId": "1",
+      "polyLine": [
+        {
+          "lat": 50.444688234298745,
+          "lng": 30.520877838134766
+        },
+        {
+          "lat": 50.446027359426736,
+          "lng": 30.513582229614258
+        },
+        {
+          "lat": 50.448924112703374,
+          "lng": 30.51454782485962
+        },
+        {
+          "lat": 50.449347679689375,
+          "lng": 30.5120587348938
+        },
+        {
+          "lat": 50.452162254314366,
+          "lng": 30.50851821899414
+        },
+        {
+          "lat": 50.4501128233431,
+          "lng": 30.502960681915283
+        },
+        {
+          "lat": 50.45213492915201,
+          "lng": 30.500857830047607
+        }
+      ],
+      "length": 2177,
       "id": 2
     },
     {
-      "name": "Awesome route 3",
-      "category": "walking",
-      "description": "Nice day",
-      "markers": [],
-      "userId": "6",
+      "name": "Lorem 3 ",
+      "category": "car",
+      "description": "Morbi non est nisl. Aliquam consequat neque tellus, quis ultrices purus dignissim vitae. Donec ut augue at tellus venenatis fermentum. Sed tempor iaculis molestie. Integer ante sapien, efficitur sit amet tortor sed, rutrum tempor mauris. Donec non sem sed nibh imperdiet rutrum dictum quis lectus. Aliquam lacus sapien, venenatis vel convallis a, convallis sed orci. Integer ut orci accumsan ligula consectetur venenatis. In pretium consectetur lacus. Nunc quis viverra est. Maecenas consectetur justo magna. Pellentesque aliquet eu quam et feugiat. Duis tristique massa luctus aliquam vulputate. Vivamus elit arcu, pretium eget volutpat dignissim, vehicula ac lectus. Nam urna dui, semper nec maximus ut, maximus eleifend felis. Praesent faucibus ipsum cursus lacinia cursus.",
+      "markers": [
+        {
+          "lat": 49.42169406084926,
+          "lng": 32.05810546875
+        },
+        {
+          "lat": 49.462769002715596,
+          "lng": 32.003173828125
+        },
+        {
+          "lat": 49.537686652219996,
+          "lng": 32.09930419921875
+        },
+        {
+          "lat": 49.6462914122132,
+          "lng": 32.1185302734375
+        },
+        {
+          "lat": 49.70494403307891,
+          "lng": 31.98944091796875
+        },
+        {
+          "lat": 49.83089628828897,
+          "lng": 31.7669677734375
+        },
+        {
+          "lat": 50.04655739071663,
+          "lng": 31.50604248046875
+        },
+        {
+          "lat": 50.04655739071663,
+          "lng": 31.43463134765625
+        },
+        {
+          "lat": 50.326176234236264,
+          "lng": 30.9759521484375
+        },
+        {
+          "lat": 50.375247828001335,
+          "lng": 30.86883544921875
+        },
+        {
+          "lat": 50.392761107929395,
+          "lng": 30.706787109375
+        },
+        {
+          "lat": 50.394512080233746,
+          "lng": 30.58319091796875
+        }
+      ],
+      "userId": "1",
+      "polyLine": [
+        {
+          "lat": 49.42169406084926,
+          "lng": 32.05810546875
+        },
+        {
+          "lat": 49.462769002715596,
+          "lng": 32.003173828125
+        },
+        {
+          "lat": 49.537686652219996,
+          "lng": 32.09930419921875
+        },
+        {
+          "lat": 49.6462914122132,
+          "lng": 32.1185302734375
+        },
+        {
+          "lat": 49.70494403307891,
+          "lng": 31.98944091796875
+        },
+        {
+          "lat": 49.83089628828897,
+          "lng": 31.7669677734375
+        },
+        {
+          "lat": 50.04655739071663,
+          "lng": 31.50604248046875
+        },
+        {
+          "lat": 50.04655739071663,
+          "lng": 31.43463134765625
+        },
+        {
+          "lat": 50.326176234236264,
+          "lng": 30.9759521484375
+        },
+        {
+          "lat": 50.375247828001335,
+          "lng": 30.86883544921875
+        },
+        {
+          "lat": 50.392761107929395,
+          "lng": 30.706787109375
+        },
+        {
+          "lat": 50.394512080233746,
+          "lng": 30.58319091796875
+        }
+      ],
+      "length": 172198,
       "id": 3
     },
     {
-      "name": "Awesome route 4",
-      "category": "byce",
-      "description": "Bad day",
-      "markers": [],
-      "userId": "6",
+      "name": "Lorem 4 ",
+      "category": "walking",
+      "description": "Aliquam non nisi interdum, tincidunt ex eget, fringilla ante. Quisque at mi cursus, fermentum elit eget, pulvinar velit. Duis ut rutrum arcu, ut malesuada dolor. Vestibulum in augue in arcu dignissim convallis. Nunc sed nibh ultrices, tempor lacus vitae, rutrum purus. Fusce at lorem cursus nisl laoreet pellentesque. Mauris condimentum nisi in justo feugiat accumsan. Proin bibendum tempus mauris, sed porta urna elementum vitae. Nam commodo elementum sem rutrum fermentum. Nullam dui sem, cursus in pellentesque id, sodales eget eros. Praesent sagittis mattis vestibulum.",
+      "markers": [
+        {
+          "lat": 49.44077084172183,
+          "lng": 32.065701484680176
+        },
+        {
+          "lat": 49.44308690251604,
+          "lng": 32.0616888999939
+        },
+        {
+          "lat": 49.44533309794395,
+          "lng": 32.0646071434021
+        },
+        {
+          "lat": 49.44693746024965,
+          "lng": 32.06492900848389
+        },
+        {
+          "lat": 49.44697931247674,
+          "lng": 32.064242362976074
+        },
+        {
+          "lat": 49.44985307994681,
+          "lng": 32.06430673599243
+        },
+        {
+          "lat": 49.449887954731025,
+          "lng": 32.06452131271362
+        },
+        {
+          "lat": 49.4500065288118,
+          "lng": 32.064757347106934
+        },
+        {
+          "lat": 49.45080864006095,
+          "lng": 32.0666778087616
+        },
+        {
+          "lat": 49.451143430439195,
+          "lng": 32.06681728363037
+        },
+        {
+          "lat": 49.451380572240346,
+          "lng": 32.06658124923706
+        },
+        {
+          "lat": 49.451561915196564,
+          "lng": 32.066195011138916
+        },
+        {
+          "lat": 49.451359648009905,
+          "lng": 32.06604480743408
+        },
+        {
+          "lat": 49.451192253844965,
+          "lng": 32.06551909446716
+        }
+      ],
+      "userId": "2",
+      "polyLine": [
+        {
+          "lat": 49.44077084172183,
+          "lng": 32.065701484680176
+        },
+        {
+          "lat": 49.44308690251604,
+          "lng": 32.0616888999939
+        },
+        {
+          "lat": 49.44533309794395,
+          "lng": 32.0646071434021
+        },
+        {
+          "lat": 49.44693746024965,
+          "lng": 32.06492900848389
+        },
+        {
+          "lat": 49.44697931247674,
+          "lng": 32.064242362976074
+        },
+        {
+          "lat": 49.44985307994681,
+          "lng": 32.06430673599243
+        },
+        {
+          "lat": 49.449887954731025,
+          "lng": 32.06452131271362
+        },
+        {
+          "lat": 49.4500065288118,
+          "lng": 32.064757347106934
+        },
+        {
+          "lat": 49.45080864006095,
+          "lng": 32.0666778087616
+        },
+        {
+          "lat": 49.451143430439195,
+          "lng": 32.06681728363037
+        },
+        {
+          "lat": 49.451380572240346,
+          "lng": 32.06658124923706
+        },
+        {
+          "lat": 49.451561915196564,
+          "lng": 32.066195011138916
+        },
+        {
+          "lat": 49.451359648009905,
+          "lng": 32.06604480743408
+        },
+        {
+          "lat": 49.451192253844965,
+          "lng": 32.06551909446716
+        }
+      ],
+      "length": 1640,
       "id": 4
+    },
+    {
+      "name": "Lorem 5 ",
+      "category": "car",
+      "description": "Aenean vel auctor augue. Nullam egestas ipsum eu tellus fermentum, eu porta ligula semper. Vestibulum sollicitudin faucibus iaculis. Sed aliquet augue at imperdiet condimentum. Aliquam maximus faucibus nisi eget molestie. Pellentesque dolor nunc, commodo vel risus eu, malesuada dignissim libero. Vivamus maximus sed risus vitae ornare. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Interdum et malesuada fames ac ante ipsum primis in faucibus. Fusce semper neque ut ante mollis, mollis iaculis velit vestibulum. Duis vitae tortor in erat maximus dapibus. Nunc urna nunc, venenatis non lectus et, mattis ornare nulla. Aenean ut eleifend ligula, a gravida sem. In elementum leo lectus, in elementum sem tempor vestibulum.",
+      "markers": [
+        {
+          "lat": 49.42052158072066,
+          "lng": 32.10153579711914
+        },
+        {
+          "lat": 49.429984370865085,
+          "lng": 32.08488464355469
+        },
+        {
+          "lat": 49.43807793471477,
+          "lng": 32.0705509185791
+        },
+        {
+          "lat": 49.44148241420975,
+          "lng": 32.06454277038574
+        },
+        {
+          "lat": 49.44407747343166,
+          "lng": 32.06836223602295
+        },
+        {
+          "lat": 49.44449601850853,
+          "lng": 32.06913471221924
+        },
+        {
+          "lat": 49.44672819857838,
+          "lng": 32.067718505859375
+        },
+        {
+          "lat": 49.447035115390584,
+          "lng": 32.0621395111084
+        },
+        {
+          "lat": 49.444775046574925,
+          "lng": 32.05909252166748
+        },
+        {
+          "lat": 49.443100854358,
+          "lng": 32.06179618835449
+        },
+        {
+          "lat": 49.44446811561457,
+          "lng": 32.06364154815674
+        }
+      ],
+      "userId": "2",
+      "polyLine": [
+        {
+          "lat": 49.42052158072066,
+          "lng": 32.10153579711914
+        },
+        {
+          "lat": 49.429984370865085,
+          "lng": 32.08488464355469
+        },
+        {
+          "lat": 49.43807793471477,
+          "lng": 32.0705509185791
+        },
+        {
+          "lat": 49.44148241420975,
+          "lng": 32.06454277038574
+        },
+        {
+          "lat": 49.44407747343166,
+          "lng": 32.06836223602295
+        },
+        {
+          "lat": 49.44449601850853,
+          "lng": 32.06913471221924
+        },
+        {
+          "lat": 49.44672819857838,
+          "lng": 32.067718505859375
+        },
+        {
+          "lat": 49.447035115390584,
+          "lng": 32.0621395111084
+        },
+        {
+          "lat": 49.444775046574925,
+          "lng": 32.05909252166748
+        },
+        {
+          "lat": 49.443100854358,
+          "lng": 32.06179618835449
+        },
+        {
+          "lat": 49.44446811561457,
+          "lng": 32.06364154815674
+        }
+      ],
+      "length": 5506,
+      "id": 5
+    },
+    {
+      "name": "Lorem 6 ",
+      "category": "byce",
+      "description": "Aliquam a ante nisi. Fusce feugiat sollicitudin tortor, id sodales ante cursus ac. Ut ut tempus augue. Quisque mauris augue, semper a est ac, tempor volutpat mauris. Nam vitae felis a mauris condimentum tincidunt. Curabitur commodo eros vitae dolor faucibus tempus. Etiam fringilla, ipsum nec vulputate feugiat, neque leo imperdiet felis, et lobortis eros sapien vel est. Nulla facilisi. Praesent faucibus velit egestas libero finibus, eu suscipit magna consequat. Vivamus egestas iaculis scelerisque.",
+      "markers": [
+        {
+          "lat": 49.445472609793796,
+          "lng": 32.05683946609497
+        },
+        {
+          "lat": 49.447774498002914,
+          "lng": 32.05278396606445
+        },
+        {
+          "lat": 49.44470528970719,
+          "lng": 32.04883575439453
+        },
+        {
+          "lat": 49.44311480619603,
+          "lng": 32.05162525177002
+        },
+        {
+          "lat": 49.44151031880282,
+          "lng": 32.05480098724365
+        },
+        {
+          "lat": 49.439947637137976,
+          "lng": 32.05759048461914
+        },
+        {
+          "lat": 49.44095222392482,
+          "lng": 32.058963775634766
+        },
+        {
+          "lat": 49.44091734278402,
+          "lng": 32.05935001373291
+        }
+      ],
+      "userId": "3",
+      "polyLine": [
+        {
+          "lat": 49.445472609793796,
+          "lng": 32.05683946609497
+        },
+        {
+          "lat": 49.447774498002914,
+          "lng": 32.05278396606445
+        },
+        {
+          "lat": 49.44470528970719,
+          "lng": 32.04883575439453
+        },
+        {
+          "lat": 49.44311480619603,
+          "lng": 32.05162525177002
+        },
+        {
+          "lat": 49.44151031880282,
+          "lng": 32.05480098724365
+        },
+        {
+          "lat": 49.439947637137976,
+          "lng": 32.05759048461914
+        },
+        {
+          "lat": 49.44095222392482,
+          "lng": 32.058963775634766
+        },
+        {
+          "lat": 49.44091734278402,
+          "lng": 32.05935001373291
+        }
+      ],
+      "length": 1839,
+      "id": 6
     }
   ],
   "comments": [
     {
-      "id": 1,
-      "description": "desc",
-      "rating": 7,
-      "userId": 1,
-      "routeId": 1
+      "description": "Hmm, nice route, i give you nice rate!!",
+      "rating": "8",
+      "userId": "2",
+      "routeId": 2,
+      "id": 1
     },
     {
-      "description": "wdqdwqdqwd",
+      "description": "Ok, I will try this route for my trip",
       "rating": "4",
+      "userId": "2",
+      "routeId": 3,
       "id": 2
     },
     {
-      "description": "wqdqw",
-      "rating": "10",
-      "userId": "3",
-      "routeId": 1,
-      "id": 3
-    },
-    {
-      "description": "qqqqq",
-      "rating": "5",
-      "userId": "3",
-      "routeId": 1,
-      "id": 4
-    },
-    {
-      "description": "111111111",
-      "rating": "4",
-      "userId": "3",
-      "routeId": 1,
-      "id": 5
-    },
-    {
-      "description": "gav",
-      "rating": "2",
-      "userId": "3",
-      "routeId": 1,
-      "id": 6
-    },
-    {
-      "description": "Hello",
+      "description": "Hmm, ok I will try it for my walking",
       "rating": "6",
       "userId": "3",
-      "routeId": 2,
-      "id": 7
-    },
-    {
-      "description": "Hmm, nice route",
-      "rating": "8",
-      "userId": "3",
-      "routeId": 3,
-      "id": 8
-    },
-    {
-      "description": "Hi",
-      "rating": "",
-      "userId": "4",
-      "routeId": 3,
-      "id": 9
-    },
-    {
-      "description": "Hmm, i dont` think that it is nice route",
-      "rating": "1",
-      "userId": "2",
-      "routeId": 3,
-      "id": 10
+      "routeId": 4,
+      "id": 3
     }
   ],
   "favorites": [
     {
-      "id": 1,
-      "userId": 1,
-      "routeId": 1
+      "userId": "2",
+      "routeId": 2,
+      "id": 1
     },
     {
-      "userId": "6",
-      "routeId": 2,
+      "userId": "2",
+      "routeId": 3,
       "id": 2
     },
     {
-      "userId": "6",
-      "routeId": 4,
+      "userId": "3",
+      "routeId": 3,
       "id": 3
     }
   ]
